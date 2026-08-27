@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank loan approval</title>
+    <style>
+        body{
+            
+            background: linear-gradient(blue ,lightblue);
+            background-size: 20px;
+        }
+        #b2{
+            background: linear-gradient(darkblue,lightblue);
+             width: 400px;
+             text-align: center;
+            height: 250px;
+            position: absolute;
+            left: 500px;
+
+           
+        }
+        #b1{
+        background: linear-gradient(blue,darkblue);
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="b2">
+    <h1>BANK LOAN APPROVAL</h1>
+    <label for="">Enter the salary:</label>
+    <input type="number" name="" id="salary"><br><br>
+    <label for="">Enter the age   :</label>
+    <input type="number" name="" id="age"><br><br>
+    <button onclick="one()">click</button>
+    <h2 id="b1"></h2>
+    </div>
+    <script>
+        function one(){
+            let salary=Number(document.getElementById("salary").value);
+            let age=Number(document.getElementById("age").value);
+            if(salary>=25000){
+                if (age>=21){
+                    document.getElementById("b1").innerHTML="loan approval"
+                }
+                else{
+                    document.getElementById("b1").innerHTML="age not eligible"
+                }
+            }
+            else{
+                document.getElementById("b1").innerHTML="salary is not eligible"
+            }
+                }
+    </script>
+    
+</body>
+</html>

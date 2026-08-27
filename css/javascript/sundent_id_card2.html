@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student ID card</title>
+    <style>
+.box{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+   
+}
+.tab{
+     
+    background-color:purple;
+    padding: 30pxpx;
+    display: inline;
+     border: 2px solid rgb(0, 0, 0);
+}
+     
+.dls{
+padding: 50px;
+background-image:url("s1.jpg") ;
+border: 2px solid black;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+        <div class="tab">
+            <h1>student id card</h1>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>NAME:</td>
+                        <td><input type="text" id="nm"></td>
+                    </tr>
+
+                    <tr>
+                        <td> COURES:</td>
+                        <td>
+                            <select name="" id="cre">
+                                <option value="">-select-</option>
+                                <option value="">java</option>
+                                <option value="">pthon</option>
+                                <option value="">c++</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>MOBLIE NUMBER:</td>
+                        <td><input type="text" id="no"></td>
+                    </tr>
+                    
+                        <td rowspan="2"><input type="button" value="submit" onclick="card()" style="text-align: center;"></td>
+                        
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+        
+        <div class="dls">
+            <p id="n"></p>
+            <p id="c"></p>
+            <p id="m"></p>
+            <p id="i"></p>
+        </div>
+    </div>
+
+
+    <script>
+        function card(){
+            let a=document.getElementById("nm").value;
+            let b=document.getElementById("cre").value;
+            let d=document.getElementById("no").value;
+
+            document.getElementById("n").innerHTML="Name:"+a;
+            document.getElementById("c").innerHTML="Coures name:"+b;
+            document.getElementById("m").innerHTML="Moblie number:"+d;
+            document.getElementById("i").innerHTML="Id no:11112873";
+        }
+    </script>
+</body>
+</html>

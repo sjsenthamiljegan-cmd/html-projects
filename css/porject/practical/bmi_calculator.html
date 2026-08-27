@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(126, 248, 4);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            
+        }
+    #b1{
+        background-color: rgb(64, 189, 33);
+        padding: 100px;
+    }
+    #m3{
+        background-color: green;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <form>
+    
+    <div id="b1"><h1>BMI CALCULATOR</h1>
+        <input type="number" placeholder="height" id="height"><br><br>
+        <input type="number" placeholder="weight" id="weight"><br><br>
+        <button onclick="m1()" type="button">click</button >
+        <p id="m3">result</p>
+        </form>
+
+    
+    </div>
+    <script>
+    function m1() {
+
+    let weight = document.getElementById("weight").value;
+    let height = document.getElementById("height").value;
+    let bmi=weight/(height/100)**2;
+    document.getElementById("m3").innerHTML="youer BMI is:"+bmi
+
+}
+
+    </script>
+</body>
+
+
+</html>

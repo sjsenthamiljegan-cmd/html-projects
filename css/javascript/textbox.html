@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textbox</title>
+</head>
+<body>
+    <input type="text" id="t2">
+    <button onclick="t1()">submit</button>
+    <p id="t3"></p>
+    <script>
+        function t1(){
+            let a=document.getElementById("t2").value
+            if(a>44)
+        {
+            document.getElementById("t3").innerHTML="pass"
+        }
+        else{
+            document.getElementById("t3").innerHTML="fail"
+        }
+        }
+    </script>
+
+</body>
+</html>

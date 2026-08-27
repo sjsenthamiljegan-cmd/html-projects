@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        let num=25;
+        let count=0
+        let sum =0
+         let rev=0
+       while(num>0){
+
+        let rem=num%10
+        rev=rev*10+rem
+        num=parseInt(num /10)
+       }
+       for(i=2;i<rev;i++){
+        if(rev%i==0){
+            count+=1
+        }
+       }
+       if(count>0){
+        document.write("prime number:twiste")
+       }
+       else{
+        document.write("not prime number:not twiste")
+       }
+      
+   
+    </script>
+</body>
+</html>

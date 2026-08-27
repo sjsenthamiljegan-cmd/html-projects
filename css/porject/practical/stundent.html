@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intrest </title>
+    <style>
+        body{
+           height: 100vh;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+           background-color: rgb(216, 16, 149);
+           }
+           form{
+            background-color: rgb(182, 35, 126);
+            padding: 50px;
+            text-align: center;
+            
+            border-radius: 10px;
+            box-shadow: 5px;
+           }
+           
+           #out{
+            display: none;
+            background-color: rgb(252, 8, 142);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+           }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <h1>INTREST CALCULATER</h1>
+            <input type="number" placeholder="enter principal" id="prin">
+            <br><br>
+            <input type="number" placeholder="enter rate" id="rat"> <br><br>
+            <input type="number" placeholder="enter time" id="time"> <br><br>
+            <input type="button" onclick="intrest()" value="enter " > <br><br>
+             <h1 id="out"></h1>
+        </form>
+    </div>
+   
+
+    <script>
+        function intrest(){
+            let a=Number(document.getElementById("prin").value)
+            let b=Number(document.getElementById("rat").value)
+            let c=Number(document.getElementById("time").value)
+
+            let calc=(a*b*c)/100
+
+            document.getElementById("out").innerHTML="intrest is-"+calc
+            out.style.display = "block";
+        }
+    </script>
+</body>
+</html>

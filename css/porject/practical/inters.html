@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student mark</title>
+    <style>
+        body{
+           height: 100vh;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+           background-color: rgb(245, 8, 8);
+           }
+           form{
+            background-color: rgb(209, 46, 24);
+            padding: 50px;
+            text-align: center;
+            border: 1px dotted rgb(245, 238, 238);
+            border-radius: 10px;
+            color: white;
+           }
+           .marks{
+            background-color: rgb(128, 5, 5);
+            padding: 20px;
+            color: rgb(252, 251, 251);
+            border-radius: 20px;
+            box-shadow: 1px 3px 3px white;
+           }
+           #sub{
+            margin-top: 20px;
+            font-size: 20px;
+            color: rgb(9, 243, 9);
+            border-radius: 5px;
+           }
+          
+    </style>
+</head>
+<body>
+    <div>
+
+        <div>
+            
+            <form action="">
+                <h1>student mark:</h1>
+                <table class="marks">
+                    <tr>
+                    <td>enter mark 1:</td>
+                    <td><input type="number" id="n1" ></td>
+                    </tr>
+                    <tr>
+                    <td>enter mark 2:</td>
+                    <td><input type="number" id="n2"></td>
+                    </tr>
+                    <tr>
+                    <td>enter mark 3:</td>
+                    <td><input type="number" id="n3" ></td>
+                    </tr>
+                    <tr>
+                    <td>enter mark 4:</td>
+                    <td><input type="number" id="n4"></td>
+                    </tr>
+                    <tr>
+                    <td>enter mark 5:</td>
+                    <td><input type="number" id="n5"></td>
+                    </tr>
+                    <tr>
+                     
+                        
+                    </tr>
+                </table>
+                   <td colspan="2"><input type="submit" onclick="mark()" id="sub"></td>
+            </form>
+        </div>
+
+    </div>
+
+<script>
+function mark(){
+     let a = Number(document.getElementById("n1").value); 
+    let b = Number(document.getElementById("n2").value); 
+    let c = Number(document.getElementById("n3").value); 
+    let d = Number(document.getElementById("n4").value); 
+    let e = Number(document.getElementById("n5").value); 
+    let total=a+b+c+d+e;
+    let average=total/5;
+
+    document.write("total mark is:"+total);
+    document.write("average"+average);
+}
+</script>
+</body>
+</html>

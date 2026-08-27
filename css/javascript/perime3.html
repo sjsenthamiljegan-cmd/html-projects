@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        let a=[13,29,36,44,59,69,74,74,88,98,99,111,53,77]
+    
+
+        for( i=0;i<a.length;i++){
+            let num=a[i]
+            let count=0
+            for(j=2;j<num;j++){
+            if(num%j==0){
+                count=count+1
+            }}
+           if(count==0){
+            document.write(num+"perime number "+"<br>")
+           }
+            
+        }
+
+    </script>
+    
+</body>
+</html>

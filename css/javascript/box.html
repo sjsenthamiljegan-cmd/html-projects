@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+</head>
+<body>
+    mark1<input type="number" id="s1"> mark2
+    <input type="number" id="s2">
+    
+    add<input type="button" name="add" onclick="add()" id="a1">
+    mul<input type="button" name="" onclick="mul()" id="a2">
+    div<input type="button" name="" onclick="div()" id="a3">
+    sub<input type="button" name="" onclick="sub()" id="a4">
+    <p id="a5"></p>
+    <script>
+        function add(){
+            let a=Number(document.getElementById("s1").value)
+            let b=Number(document.getElementById("s2").value)
+            document.write(a+b)
+        }
+        function mul(){
+            let a=Number(document.getElementById("s1").value)
+            let b=Number(document.getElementById("s2").value)
+            document.write(a*b)
+        }
+        function div(){
+            let a=Number(document.getElementById("s1").value)
+            let b=Number(document.getElementById("s2").value)
+            document.write(a/b)
+        }
+        function sub(){
+            let a=Number(document.getElementById("s1").value)
+            let b=Number(document.getElementById("s2").value)
+            document.write(a-b)
+        }
+    </script>
+    
+</body>
+</html>

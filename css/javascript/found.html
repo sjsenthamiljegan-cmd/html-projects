@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=7653
+        let count=0;
+        while(num>0){
+            let digit=num %10;
+            if(digit==6){
+                count++
+            }
+             num=parseInt(num/10)
+        }
+        if(count>0){
+            document.write("number found:"+count)
+         }else{
+            document.write("number not found")
+         }
+        
+             
+    </script>
+    
+</body>
+</html>

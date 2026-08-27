@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shooping</title>
+    <style>
+body{
+    background: linear-gradient(orange,gold);
+    
+}
+    </style>
+</head>
+<body> 
+    <div id="s2">
+    <h1>online shopping</h1>
+    <label for="">Enter the pruchase amount</label>
+    <input type="number" name="" id="pruchase amount"><br><br>
+    <button onclick="one()">click</button>
+    <h2 id="s1"></h2>
+    </div>
+    <script>
+        function one(){
+            let pruchaseamount=Number(document.getElementById("pruchase amount").value);
+            if (pruchaseamount>=2000){
+                if("if customer is premium"){
+                    document.getElementById("s1").innerHTML="20% discount"
+                }
+                else{
+                    document.getElementById("s1").innerHTML="10% discount"
+                }
+            }
+            else{
+                document.getElementById("s1").innerHTML="no discount"
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eligible2</title>
+</head>
+<body>
+   youer age <input type="text" name="" id="a">
+    yes are no<input type="text" id="a1">
+    <button onclick="age()">submit</button>
+    <script>
+        function age(){
+            let a=document.getElementById("a").value
+            if(a>18)
+        {
+            let b=document.getElementById("a1").value
+
+            if(b=="yes"){
+                document.write("youer eligible")
+            }
+            else
+            {
+                document.write("youer not eligible")
+            }
+        }
+    
+        else
+
+        {
+            document.write("invalid")
+        }
+        }
+    </script>
+
+    
+</body>
+</html>

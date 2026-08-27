@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let total=0
+        let count=0
+        for(i=100;i<=1000;i++){
+          let n=i
+          let prime=0
+          let sun=n
+             while(n>0){
+                rem=n%10
+                prime=prime+(rem**3)
+                n=parseInt(n/7)
+             }
+             if(sun==prime){
+                total=total+sun
+                count++
+             }
+            }
+            document.write("total amstrong of sum is :"+total+"<br>")
+            document.write("count"+count)
+
+           
+    </script>
+    
+</body>
+</html>

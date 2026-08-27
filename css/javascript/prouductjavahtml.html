@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thmljava</title>
+    <style>
+        div{
+            background-color: blueviolet;
+        }
+    
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+        <h1>product name :<input type="text" id="p1"> </h1>
+        <h1>product prices :<input type="text" id="p2"> </h1>
+        <h1>product quality :<input type="texRt" id="p3"> </h1>
+         <input type="submit" id="p4" onclick="product()">
+         </div>
+    </center>
+    <script>
+        function product(){
+         let a=document.getElementById("p1").value
+        let b=document.getElementById("p2").value
+        let c=document.getElementById("p3").value
+        let d=b*c
+        document.write("product name:"+a+ "<br>")
+        
+        document.write("product price:"+b+"<br>")
+        document.write("product quality:"+c+"<br>")
+        document.write("total:"+d +"<br>")
+        }
+       
+        
+
+
+    </script>
+    
+</body>
+</html>

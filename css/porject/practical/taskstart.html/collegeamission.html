@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college admission</title>
+    <style>
+        body{
+            background-color: brown;
+            text-align: center;
+        }
+        #c1{
+            background-color: rgb(233, 20, 20);
+            padding: 100px;
+            width: 200px;
+            height: 200px;
+            display: center;
+            position: absolute;
+            right: 500px;
+        }
+        p{
+            background-color:brown;
+            color: rgb(10, 10, 10);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="c1">
+    <h1>college admission</h1>
+    <label for="">enter the percentage:</label>
+    <input type="number" id="percentage"><br><br>
+    <label for="">enter the age:</label>
+    <input type="number" name="" id="age"><br><br>
+    <button onclick="one()">clcik</button>
+    <p id="p1"></p>
+    </div>
+
+<script>
+    function one(){
+    let percentage=Number(document.getElementById("percentage").value);
+    let age=Number(document.getElementById("age").value);
+    if (percentage>=60){
+        if (age>=18){
+
+            document.getElementById("p1").innerHTML="admission approved"
+        }
+        else{
+            document.getElementById("p1").innerHTML="age not eligible"
+        }
+    }
+    else{
+        document.getElementById("p1").innerHTML="mark not eligible"
+        }
+        }
+</script>
+    
+</body>
+</html>

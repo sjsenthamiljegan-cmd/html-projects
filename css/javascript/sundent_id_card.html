@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sundent_id_card</title>
+</head>
+<body>
+    <form action="">
+        <tr >
+            <td>Name:</td>
+            <input type="text" name="name" id="s2">
+            <br><br>
+            <td>Coures:</td>
+        
+            <select name="" id="s3"><option value="">java</option><option value="">c++</option><option value="">css</option><option value="">python</option></select>
+       <br><br>
+            <td>Moblie:</td>
+            <input type="text" name="" id="s4">
+            <br><br>
+            <button onclick="s1()">submit</button>
+        </tr>
+    </form>
+    <div class="c1"></div>
+    <h2 id="n"></h2>
+    <h2 id="c"></h2>
+    <h2 id="m"></h2>
+    <h2></h2>
+    <script>
+        function s1(){
+          let a=  document.getElementById("s2").value
+          let b=  document.getElementById("s3").value
+           let c= document.getElementById("s4").value
+           document.getElementById("displayname").textContent="s5"
+           document.getElementById("displaycoures").textContent="s5"
+           document.getElementById("displaymoblie").textContent="s5"
+
+        }
+    </script>
+</body>
+</html>
